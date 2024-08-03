@@ -2,7 +2,6 @@ var span = 0;
 var pos = 0;
 var gennum = 0;
 
-
 window.onload = function() {
     document.getElementById("successbtn").innerHTML = ''; 
     document.getElementById("failbtn").innerHTML = ''; 
