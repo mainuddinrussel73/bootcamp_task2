@@ -1,11 +1,13 @@
 var span = 0;
 var pos = 0;
+var gennum = 0;
 
 
 window.onload = function() {
     document.getElementById("successbtn").innerHTML = ''; 
     document.getElementById("failbtn").innerHTML = ''; 
     document.getElementById('inputBox').value = span.toString();
+    document.getElementById('randNum').value = gennum.toString();
 
     const breakdownButton = document.querySelectorAll('.card');
     breakdownButton.forEach(function(btn) {
@@ -47,13 +49,20 @@ window.onload = function() {
         }
        
     }
+    document.getElementById('genRand').onclick = function(event) {
+       
+        event.preventDefault();
+        console.log('clicked')
+        gennum = Math.floor(100000 + Math.random() * 900000)
+        document.getElementById('randNum').value = gennum;
+            
+       
+    }
     document.getElementById('matchbtn').onclick = function(event) {
        
         event.preventDefault();
-        var randNum = parseInt(document.getElementById('randNum').innerHTML, 10);
-        console.log(randNum);
 
-        if(span == randNum){
+        if(span == gennum){
            
             console.log("Matched");
             document.getElementById("successbtn").innerHTML = `<div  class="alert1">
@@ -68,7 +77,7 @@ window.onload = function() {
             document.getElementById("successbtn").innerHTML = ''; 
             document.getElementById("failbtn").innerHTML = `<div class="alert">
                         <span  class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-                        <strong>Danger!</strong> Number Didn't Match.
+                        <strong>Opps!</strong> Number Didn't Match.
                     </div>`; 
 
         }
