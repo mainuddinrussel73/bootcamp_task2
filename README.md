@@ -10,7 +10,6 @@ Welcome to the ** Bootcamp_Task-2 ** repository!
 
 ## Introduction
 
-[Provide a detailed introduction to your project. Explain the motivation, goals, and key features.]
 
 ## Questions and Answers:
 
