@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <script src="./ctrl.js" ></script>
+    </head>
+    <body>
+        <div class="flex-box">
+            <div class="flex-box-left">
+                <div class="flex-mid"></div>
+                <div class="flex-mid">
+                    <div>
+                        <button class="gen-btn">Generate Secret Key</button>
+                    </div>
+                    <div>
+                        <div id="randNum" class="textbox"> 434234 </div>
+                    </div>
+                </div>
+                <div class="flex-mid"></div>
+            </div>
+            <div  class="flex-box-right">
+                <div class="top-box">
+                    <div class="top-left-box" >
+                        <p>Enter PIN: </p>
+                    </div>
+                    <div class="top-right-box">
+                        <input type="text" id="inputBox" class="inptbox">  </input>
+                    </div>
+                </div>
+                <div class="bottom-box">
+                    <div class="grid-box">
+                        <div class="cards" id="inputContainer">
+                            <button id="buttons" class="card" >1</button>
+                            <button id="buttons" class="card">2</button>
+                            <button id="buttons" class="card"    >3</button>
+                            <button id="buttons" class="card"    >4</button>
+                            <button id="buttons" class="card"    >5</button>
+                            <button id="buttons" class="card"    >6</button>
+                            <button id="buttons" class="card"    >7</button>
+                            <button id="buttons" class="card"    >8</button>
+                            <button id="buttons" class="card"    >9</button>
+                            <button id="buttons" class="card"    >0</button>
+                            <button  id="clearbtn"     class="close">X</button>
+                            <button id="matchbtn" class="submit">Submit</button>
+                            <button id="closebtn" class="clear">Clear</button>
+
+                        </div>
+                    </div>
+                    
+
+                </div>
+                <div id="failbtn" >
+                    
+                </div>
+                <div id="successbtn">
+                    
+                </div>
+                
+            </div>
+        </div>
+
+
+
+    </body>
+</html>
+
